@@ -1,4 +1,5 @@
 import Logo from '../../assets/logo.svg'
+
 import { Container, Content } from './styles'
 
 export function Header() {
@@ -6,8 +7,10 @@ export function Header() {
         <Container>
             <Content>
                 <img src={Logo} alt="GlMoney"/>
-                <button>Nova Transação</button>
-           </Content>
+                <button>
+                    Nova Transação
+                </button>
+            </Content>
         </Container>
     )
 } 
