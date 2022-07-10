@@ -38,6 +38,15 @@ export const GlobalStyle = createGlobalStyle` //exportando um variavel que de no
         -webkit-font-smoothing: antialiased;
     }
 
+    body, input, textarea, button { //input, textarea, button tem suas priprias fonts, tem que forçar a alteração
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+
+    h1, h2, h3, h4, h5, h6, strong { //são tags que vem por padrão com negrito
+        font-weight: 600;
+    }
+
     button {
         cursor: pointer;
     }
