@@ -4,6 +4,7 @@ export const GlobalStyle = createGlobalStyle` //exportando um variavel que de no
     :root {
         --red: #f52b4d;
         --blue: #5429cc;
+        --green: #33cc95;
 
         --blue-light: #6933ff;
 
