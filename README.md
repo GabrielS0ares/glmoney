@@ -50,3 +50,4 @@ resoluçao:
 Como estamos usando type script vamos declarar esses dados dentro do reader que vamos criar um nova propriedade, e como ela esta sendo chamada de dentro do botao ela vai ser colocada como um propriedade do Header, sendo assim essa propriedade precisa receber a funcao que vamos executar, assim da para meio que componentizar o modal, para que ele nao fique poluindo o codigo
 
 
+sempre que precisar que uma informacao seja compartilhada entre mais de um componente vamos colocar elas juntas dentro 
