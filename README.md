@@ -51,3 +51,9 @@ Como estamos usando type script vamos declarar esses dados dentro do reader que 
 
 
 sempre que precisar que uma informacao seja compartilhada entre mais de um componente vamos colocar elas juntas dentro 
+
+---------------Aula para criacao do modal---------------
+
+configurando a estrutura do Html dentro do modal
+
+Como modal segue mais ou menos um mesmo padrao recomendasse que seja feito dentro dos estilos globais, assim evitando ter que ficar criando o codigo de estilizacao a cada modal criado
