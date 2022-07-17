@@ -66,4 +66,15 @@ sera usado JS para manipulação de cores com o pacote polished, para instalar v
 
 yarn add polished
 
-esse pacote tem muitas helpers que servem para modificar as cores
+esse pacote tem muitas helpers que servem para modificar as cores 
+
+
+---------------Aplicando funcionamento ao botoes---------------
+
+Para mostar que o btn está ativo podemos usar uma funcao dentro da classe, da seguinte forma: className={type === 'deposit' ? 'active' : ''} nesse caso estamos usando usando a variavel que muda de estado para determinar se o btn esta ativo ou nao, dessa forma daria para controlar ele pela classe.
+
+mas vamos tranformar o botao em um styled compornte para tratar ele dentro do syled componete, que permite que seja possivel realizar as configurações de estilização de acordo com um propopriendade dentro do componente.
+
+Como vamos determinar a propriedade dentro do btn, ela ainda nao existe por padrao dentro dele, por isso ela retorna um erro, mas isso é tratavel, vamos colocar dentro do arquivo de estilizacao um interface que vai dalar que o btn vai recer uma propost booleana.
+
+Mas ela é definida dentro do arquivo de estilizacao de forma diferente, por que definimos ela com com sinal de maior na mesma linha que essa estilização é exportada
