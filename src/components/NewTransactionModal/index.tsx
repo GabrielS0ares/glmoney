@@ -1,6 +1,8 @@
 import Modal from 'react-modal';
 import closeImg from '../../assets/fechar.svg';
-import { Container } from './styles';
+import entradas from '../../assets/entradas.svg'
+import saidas from '../../assets/saidas.svg'
+import { Container, TransactionsTypeContainer } from './styles';
  
 
 
@@ -37,6 +39,22 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                 type="number"
                 placeholder='Valor'
             />
+            {/* Vamos criar mais um componente para estilização dos botoes, adotasse essa funcionalidade para que seja possivel separar ainda mais as estilizações sendo mais bonito visualmente  */}
+            <TransactionsTypeContainer> 
+                <button
+                    type='button'
+                >
+                    <img src={entradas} alt="entradas"></img>
+                    <span>Entradas</span>
+                </button>
+
+                <button
+                    type='button'
+                >
+                    <img src={saidas} alt="saidas"></img>
+                    <span>Saídas</span>
+                </button>
+            </TransactionsTypeContainer>
 
             <input
                 placeholder='Categoria'

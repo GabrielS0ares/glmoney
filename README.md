@@ -57,3 +57,13 @@ sempre que precisar que uma informacao seja compartilhada entre mais de um compo
 configurando a estrutura do Html dentro do modal
 
 Como modal segue mais ou menos um mesmo padrao recomendasse que seja feito dentro dos estilos globais, assim evitando ter que ficar criando o codigo de estilizacao a cada modal criado
+
+---------------Botoes de entrada e saida de dentro do modal---------------
+
+Altamente personalizado para a aplicação, ja que ele precisaria ser um checkbox, sem ser um checkbox:
+
+sera usado JS para manipulação de cores com o pacote polished, para instalar vamos usar o comando:
+
+yarn add polished
+
+esse pacote tem muitas helpers que servem para modificar as cores

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { darken } from 'polished' //importando um helper do polished para usar a manipulacao de cor
 
 export const Container = styled.form`
 
@@ -48,3 +49,40 @@ export const Container = styled.form`
             }
         }
 `
+
+export const TransactionsTypeContainer = styled.div`
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem;
+
+    button {
+        height: 4rem;
+        border: 1px solid #d7d7d7;
+        border-radius: 0.25rem;
+
+        background: transparent;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        transition: border-color .2s;
+
+        &:hover {
+            border-color: ${darken(0.1, '#d7d7d7')}; //usando o funcao darken, vamos chamar ela com uma interpolicao e vamos colocar 2 paramentrossendo eles valor que determinar o quento sera escurecido e o segundo que é qual a cor que será escurecida
+        }
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 1rem;
+            font-size: 1rem;
+            color: var(--text-title);
+        }
+    }
+`;
