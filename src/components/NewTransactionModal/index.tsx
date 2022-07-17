@@ -49,6 +49,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                     type='button'
                     onClick={() => {setType('deposit'); }} //Como a funcao é apenas para definir um valor para o estado usamos umas arrow function para determinar o calor la
                     isActive={type === 'deposit'}
+                    ActiveColor="green"
                 >
                     <img src={entradas} alt="entradas"></img>
                     <span>Entradas</span>
@@ -58,6 +59,7 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
                     type='button'
                     onClick={() => {setType('withdraw'); }}
                     isActive={type === 'withdraw'}
+                    ActiveColor="red"
                 >
                     <img src={saidas} alt="saidas"></img>
                     <span>Saídas</span>
