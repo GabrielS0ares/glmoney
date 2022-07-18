@@ -79,4 +79,4 @@ Como vamos determinar a propriedade dentro do btn, ela ainda nao existe por padr
 
 Mas ela é definida dentro do arquivo de estilizacao de forma diferente, por que definimos ela com com sinal de maior na mesma linha que essa estilização é exportada
 
----------------Armazenando os valores que serão colocar nos inputs---------------
+--------------Inserindo dados API---------------

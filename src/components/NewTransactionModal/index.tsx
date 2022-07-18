@@ -4,6 +4,7 @@ import closeImg from '../../assets/fechar.svg';
 import entradas from '../../assets/entradas.svg'
 import saidas from '../../assets/saidas.svg'
 import { Container, TransactionsTypeContainer, RadioBox } from './styles';
+import { api } from '../../services/api';
 
  
 
@@ -23,6 +24,15 @@ export function NewTransactionModal({ isOpen, onRequestClose }: NewTransactionMo
 
     function handleCreateNewTransaction(event: FormEvent){ //toda funcao que começa com handle vem da funcão exercida pelo usuarios
         event.preventDefault();
+
+        const data = {
+            title,
+            value,
+            category,
+            type,
+        };
+
+        api.post('/transactions', data)
     }
 
 
