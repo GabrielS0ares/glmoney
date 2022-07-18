@@ -78,3 +78,5 @@ mas vamos tranformar o botao em um styled compornte para tratar ele dentro do sy
 Como vamos determinar a propriedade dentro do btn, ela ainda nao existe por padrao dentro dele, por isso ela retorna um erro, mas isso é tratavel, vamos colocar dentro do arquivo de estilizacao um interface que vai dalar que o btn vai recer uma propost booleana.
 
 Mas ela é definida dentro do arquivo de estilizacao de forma diferente, por que definimos ela com com sinal de maior na mesma linha que essa estilização é exportada
+
+---------------Armazenando os valores que serão colocar nos inputs---------------
