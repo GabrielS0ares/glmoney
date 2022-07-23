@@ -80,3 +80,9 @@ Como vamos determinar a propriedade dentro do btn, ela ainda nao existe por padr
 Mas ela é definida dentro do arquivo de estilizacao de forma diferente, por que definimos ela com com sinal de maior na mesma linha que essa estilização é exportada
 
 --------------Inserindo dados API---------------
+
+Deixando os dados pre cadastradas no API do mirage, utilizando um funcao chamada seeds
+
+IMPORTANTE
+
+eu posso criar uma classe dentro do global e setar essa classe com um map dentro do componente, assim como está sendo feito no category
