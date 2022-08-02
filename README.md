@@ -90,3 +90,6 @@ eu posso criar uma classe dentro do global e setar essa classe com um map dentro
 --------------Trabalhando com Contexto dentro do react---------------
 
 Quando criado um contexto podemos acessar ele de qualquer parte da nossa aplicação, mas para que ele funcione precisamos colocar ele por voltar de onde será utilizado as informações que estarão dentro desse contexto.
+
+--------------Importando dados para dentro do contexto---------------
+

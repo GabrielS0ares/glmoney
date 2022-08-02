@@ -4,7 +4,7 @@ import { Header } from "./components/Header";
 import Modal from "react-modal"
 import { GlobalStyle } from "./styles/global";
 import { NewTransactionModal } from "./components/NewTransactionModal";
-import { TransactionsContext } from "./TransactionsContext";
+import { TransactionsProvider } from "./TransactionsContext";
 
 Modal.setAppElement('#root') //apenas para acessibilidade sendo assim quando o modal for executado ele vai referenciar o nosso App  
 
@@ -21,7 +21,7 @@ function App() {
 
   return (
     //usaremos o contexto definido por voltar de um ou mais componentes que queremos tenha seus dados acessados, no caso desse app vamos deixar por voltar de todos os componentes
-    <TransactionsContext.Provider value={[]}> 
+    <TransactionsProvider> 
       <Header onOpenNewTransactionModal={handleOpenNewTransactionModal}/> 
 
       <Dashboard />
@@ -34,7 +34,7 @@ function App() {
       />
 
       <GlobalStyle />
-    </TransactionsContext.Provider>
+    </TransactionsProvider>
   );
 }
 
